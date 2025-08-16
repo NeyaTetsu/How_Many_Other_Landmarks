@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>東京ドーム換算されてもわからん！</title>
+</head>
+<body>
+    <h1>東京ドーム換算されてもわからん！</h1>
+    <h2>東京ドームの数</h2>
+    <input type="number" name="TokyoDomeCounts" id="TokyoDomeCounts">
+    <label for="TokyoDomeCounts">個分</label>
+    <h2>換算先</h2>
+    <select name="SelectLandmark" id="SelectLandmark">
+        <option value="0">万博 大屋根リング</option>
+        <option value="1">インテックス大阪 3号館</option>
+        <option value="2">インテックス大阪 4号館</option>
+        <option value="3">インテックス大阪 5号館</option>
+        <option value="4">幕張メッセ 9ホール</option>
+    </select>
+    <button onclick="CalculateOtherLandmark()">計算開始</button>
+    <h2>結果</h2>
+    <p id="ResultText">ここに結果が表示されます</p>
+    <script src="script.js"></script>
+</body>
+</html>
