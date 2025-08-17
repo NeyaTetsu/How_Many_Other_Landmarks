@@ -9,7 +9,9 @@ const LandmarksArea = [
     4728, //インテックス大阪 5号館
     9000, //幕張メッセ 9ホール
     1790.26, //福岡サンパレスホール
-    1134 //仙台サンプラザホール
+    1134, //仙台サンプラザホール
+    663000, //長居公園
+    38500, //甲子園球場
 ];
 
 function CalculateOtherLandmark() {
@@ -26,5 +28,5 @@ function CalculateOtherLandmark() {
     //小数点第2位を四捨五入
     let LandmarkCountRound = Math.round(LandmarkCount * 10) / 10;
 
-    ResultText.innerHTML = `${SelectedLandmarkText} ${LandmarkCountRound}個分（約${CalculatedArea}m&sup2）`;
+    ResultText.innerHTML = `${SelectedLandmarkText} ${LandmarkCountRound}個分（約${CalculatedArea}m&sup2;）`;
 }
